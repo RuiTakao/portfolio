@@ -193,18 +193,4 @@ body {
     .copy img {
         width: calc(1440 / 1920 * 100%);
     }
-
-    .first_view_cover {
-        background-size: cover;
-        height: 810px;
-    }
-
-    .copy_cover {
-        top: 105px;
-        right: 78.75px;
-    }
-
-    .copy_cover img {
-        width: calc(1440 / 1920 * 100%);
-    }
 }
