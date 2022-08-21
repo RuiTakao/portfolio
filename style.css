@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width:100%;
+    background: linear-gradient(45deg, #f7f5f6 25%, transparent 25%, transparent 75%, #f7f5f6 75%),
+                linear-gradient(45deg, #f7f5f6 25%, transparent 25%, transparent 75%, #f7f5f6 75%);
+    background-color: #fff;
+    background-size: 80px 80px;
+    background-position: 0 0, 40px 40px;
+}
+
+/** ファーストビュー */
+.first_view {
+    height: 900px;
+    background-image: url(img/FV.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* opacity: 0; */
+    z-index: 100;
+    position: relative;
+}
+
+.fv_container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.copy {
+    position: absolute;
+    top: 140px;
+    right: 105px;
+
+    /* top: 105px;
+        right: 78.75px; */
+}
+
+.copy img {
+    width: 280px;
+    
+}
+
+/** 背景 */
+.bg {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    box-shadow: 0px 0px 50px 80px #fff;
+}
+
+/** My Work */
+.mywork_content {
+    margin: 0 auto;
+}
+
+.mywork_content img {
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+/** My Activity */
+.myactivity {
+    margin-top: 220px;
+}
+
+.myactivity_title img {
+    width: 552px;
+    margin: 0 auto;
+    display: block;
+    padding-right: 16px;
+}
+
+.myactivity_contents {
+    margin-top: 80px;
+}
+
+.myactivity_content {
+    list-style: none;
+}
+
+.myactivity_content:not(:first-child) {
+    margin-top: 100px;
+}
+
+.myactivity_content_img img {
+    width: 568px;
+    display: block;
+    margin: 0 auto;
+}
+
+.myactivity_content_title {
+    width: 568px;
+    margin: 0 auto;
+}
+
+.myactivity_content_title img {
+    height: 64px;
+    margin-top: 32px;
+}
+
+.myactivity_content_text {
+    margin-top: 24px;
+    width: 568px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+/** profile */
+.profile {
+    margin-top: 300px;
+}
+
+.profile_title img{
+    width: 552px;
+    margin: 0 auto;
+    display: block;
+    padding-right: 16px;
+}
+
+.profile_area {
+    display: flex;
+    justify-content: space-between;
+    width: 720px;
+    margin: 0 auto;
+    margin-top: 96px;
+    column-gap: 60px;
+}
+
+.profile_icon {
+    width: 45%;
+}
+
+.profile_icon img {
+    width: 100%;
+}
+
+.profile_txt {
+    width: 55%;
+}
+
+.profile_txt img {
+    width: 100%;
+    margin-top: 14%;
+}
+
+.profile_body {
+    padding-top: 56px;
+    width: 720px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.8em;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+.footer {
+    background: #000;
+}
+
+.footer_container {
+    max-width: 1080px;
+    height: 140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.copyright {
+    color: #fff;
+    font-size: 36px;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+@media screen and (max-width: 1440px) {
+    /** ファーストビュー */
+    .first_view {
+        background-size: cover;
+        height: 810px;
+    }
+
+    .copy {
+        top: 105px;
+        right: 78.75px;
+    }
+
+    .copy img {
+        width: calc(1440 / 1920 * 100%);
+    }
+
+    .first_view_cover {
+        background-size: cover;
+        height: 810px;
+    }
+
+    .copy_cover {
+        top: 105px;
+        right: 78.75px;
+    }
+
+    .copy_cover img {
+        width: calc(1440 / 1920 * 100%);
+    }
+}

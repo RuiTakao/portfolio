@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>超簡単！CDNのjQueryを読み込む方法</title>
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<script>
+    $(function(){
+//   $("#btn_scale").on("click", function(){
+    $("#scale").fadeIn(1500);
+    $("#scale").css({
+      "transform": "scale(1)"
+    });
+//   });
+  
+  $("#btn_hide").on("click", function(){
+    $("#scale").fadeOut(500);
+    $("#scale").css({
+      "transform": "scale(0)"
+    });
+  })
+});
+</script>
+<style>
+    #scale{
+  transition: transform 1.5s;
+  transform: scale(0);
+  display: none;
+  
+  width: 250px;
+  height: 150px;
+  margin: 12px;
+  background-color: #58F;
+}
+</style>
+</head>
+ 
+<body id="top">
+    <button id="btn_scale">拡大しながら表示</button> <button id="btn_hide">隠す</button>
+
+<div id="scale"></div>
+</body>
+</html>
