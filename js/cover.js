@@ -1,4 +1,4 @@
-$(function(){
+$(function() {
     /* cover作る **/
     const cover = $('<div></div>', {
       "class": "cover"
@@ -7,7 +7,7 @@ $(function(){
       "class": "copy_cover"
     })
     const copyImage = $('<img />', {
-      src: "img/copy.png",
+      src: "../img/copy.png",
       "class": "copy_cover_img"
     })
 

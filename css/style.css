@@ -16,10 +16,9 @@ body {
 /** ファーストビュー */
 .first_view {
     height: 900px;
-    background-image: url(img/FV.jpg);
+    background-image: url(../img/FV.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    /* opacity: 0; */
     z-index: 100;
     position: relative;
 }

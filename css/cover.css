@@ -10,13 +10,6 @@
     z-index: 300;
 }
 
-.fv_container_cover {
-    /* position: relative;
-    max-width: 1200px;
-    height: auto;
-    margin: 0 auto; */
-}
-
 .copy_cover {
     position: fixed;
     top: 50%;
