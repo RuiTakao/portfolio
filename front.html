@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            padding-top: 8vh;
+            transition: .5s;
+        }
+
+        .container {
+            width: 80vw;
+            height: 80vh;
+            /* background: skyblue; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn_area {
+            display: block;
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            background: red;
+            width: 300px;
+            text-align: center;
+            padding: 8px;
+            border-radius: 25px;
+            box-shadow: 0 2px 6px #333;
+            transition: .5s;
+        }
+
+        .btn_area:hover {
+            transform: translateY(-5px);
+        }
+
+        .btn_area:active {
+            box-shadow: 0 2px 18px red;
+        }
+
+        .red {
+            background: red;
+        }
+
+        .blue {
+            background: blue;
+        }
+
+        .yellow {
+            background: yellow;
+        }
+
+        .white {
+            background: #fff;
+        }
+
+        .dn {
+            display: none;
+            transition: 1s;
+            transform: scale(0);
+        }
+
+
+    </style>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <title>takao's portfolio</title>
+</head>
+<body>
+    <div class="container">
+            <a class="btn_area dn" href="index.html">Enter</a>
+    </div>
+    <script>
+        $(function() {
+            $('.container').hover(function() {
+                $('body').addClass('red')
+                setTimeout(function() {
+                    $('body').removeClass('red')
+                    $('body').addClass('blue')
+                }, 1000)
+                setTimeout(function() {
+                    $('body').removeClass('blue')
+                    $('body').addClass('yellow')
+                }, 2000)
+                setTimeout(function() {
+                    $('body').removeClass('yellow')
+                    $('body').addClass('white')
+                }, 3000)
+                setTimeout(function() {
+                    $('.btn_area').fadeIn()
+                    $('.btn_area').css({
+                        "transform": "scale(1)"
+                    })
+                }, 3500)
+            })
+        })
+    </script>
+</body>
+</html>
